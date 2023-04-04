@@ -18,9 +18,12 @@ class Array2dim{
   void PrintArray(){
       System.out.println(" Elements are:");
       for(int i=0;i<3;i++){
-        for(int j=0;j<3;j++){
-               
-  }
+        for(int j=0;j<3;j++){           
+        System.out.print(a[i][j] +" ");
+      }
+       System.out.println();
+    }
+    }
   void FindArr(){
     int n;
     int c=0;
