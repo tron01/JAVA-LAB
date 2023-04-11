@@ -12,7 +12,5 @@ class StringEx1{
         System.out.println(s1.toUpperCase()); 
         System.out.println(s1.substring(0,1)); 
 
-
-
     }
 }

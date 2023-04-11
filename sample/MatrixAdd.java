@@ -59,7 +59,7 @@ System.out.println("  Elements of C:");
        System.out.println();
     }
 }
-    public static void main (String args[]){
+public static void main (String args[]){
 MatrixAdd obj =new MatrixAdd();
 obj.ReadM();
 obj.AddM();
