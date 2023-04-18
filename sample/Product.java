@@ -28,9 +28,9 @@ class Product {
 
    public static  void main(String args[]) {
     Product p[]=new Product[3];
-     p[0]=new Product(11,"p1",2000);
-     p[1]=new Product(11,"p2",1000);
-      p[2]=new Product(11,"p3",400);
+     p[0]=new Product(1,"p1",2000);
+     p[1]=new Product(2,"p2",1000);
+      p[2]=new Product(3,"p3",400);
     p[0].display();
     System.out.println("---------------------");
     p[1].display();
