@@ -18,7 +18,9 @@ b1.name ="AAA";
 b1.year =2022;
 
 b1.show();
+
 Bike b2=new Bike("Bmw",2001);
 b2.show();
+
 }
 }
