@@ -1,3 +1,4 @@
+// prgm -4 matrix addition
 import java.util.Scanner;
 class MatrixAdd{
     int a[][];

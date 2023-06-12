@@ -1,3 +1,4 @@
+//prgm-3 search an element in array
 import java.util.Scanner;
 class Array1dim{
   

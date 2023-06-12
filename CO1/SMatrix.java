@@ -1,3 +1,4 @@
+//prgm -5  to check  a matrix is symmetric or not.
 import java.util.Scanner;
 class SMatrix{
     int a[][];
@@ -27,9 +28,20 @@ class SMatrix{
        System.out.println();
     }
     }
+      void SymArray(){
+      
+      System.out.println("  Elements of A in :");
+      for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){           
+        System.out.print(a[j][i] +" ");
+      }
+       System.out.println();
+    }
+    }
     public static void main(String args[]){
 SMatrix obj =new SMatrix();
 obj.ReadArray();
 obj.PrintArray();
+obj.SymArray();
     }
 }

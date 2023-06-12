@@ -1,3 +1,5 @@
+//prgm -2 sort string.
+
 import java.util.Scanner;
 
 class Student {
