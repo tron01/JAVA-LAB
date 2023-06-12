@@ -3,12 +3,15 @@ import java.util.Scanner;
 class Array1dim{
   
   int []a;
-
+int size;
   void ReadArray(){
-    a=new int[5];
+   
     Scanner s =new Scanner(System.in);
+    System.out.println("Enter the size of array:");
+    size=s.nextInt();
+    a= new int [size];
     System.out.println("Enter the elements:");
-    for(int i=0;i<5;i++){
+    for(int i=0;i<size;i++){
         a[i]=s.nextInt();
 
     }
@@ -16,7 +19,7 @@ class Array1dim{
   }
   void PrintArray(){
       System.out.println(" Elements are:");
-      for(int i=0;i<5;i++){
+      for(int i=0;i<size;i++){
         System.out.println(a[i]);
       }
   }
@@ -26,7 +29,7 @@ class Array1dim{
     System.out.println(" Enter the  Elements to search:");
     Scanner s =new Scanner(System.in);
     n=s.nextInt();
-    for(int i=0;i<5;i++){
+    for(int i=0;i<size;i++){
         if(a[i]==n){
              c=c+1;
              
