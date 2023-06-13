@@ -1,3 +1,4 @@
+// prgm- 6
 class Product {
     int price;
     String pname;
