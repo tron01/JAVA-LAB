@@ -1,62 +1,58 @@
 import java.util.Scanner;
 
-class Employe{
-    private int eNo;
-    private String eName;
-    private double eSalary;
-    Employe(int eNo,eName,eSalary){
-        this.eNo =eNo;
-        this.eName=eName;
-        this.eSalary=eSalary;
+class Employee1 {
+ int eNo;
+ String eName="";
+ float eSalary;
+ 
+ public void getInput() {
+ 
+  Scanner in = new Scanner(System.in);
+  System.out.print("Enter the Employee No :: ");
+  eNo = in.nextInt();
+  System.out.print("Enter the Employee name :: ");
+  eName = in.next();
+  System.out.print("Enter the salary :: ");
+  eSalary = in.nextFloat();
+ }
+ 
+ public void display() {
+  
+  System.out.println("Employee No = " + eNo);
+  System.out.println("Employee name = " + eName);
+  System.out.println("Employee salary = " + eSalary);
+ }
+public static void main(String[] args) {
+  
+  System.out.println("Enter the no. of employees");
+Scanner sc = new Scanner(System.in);   
+int n=sc.nextInt();
+  Employee1 e[] = new Employee1[n];
+        for (int i = 0; i < n; i++) {
+        	e[i] = new Employee1();
+	
+  	e[i].getInput();
     }
-    public int getEno(){
-        return eNo;
-
+  System.out.println("********************************");
+    System.out.println("**** Data Entered as below ****");
+  
+    for(int i=0; i<n; i++) {
+   
+   	e[i].display();
     }
-    public String getName(){
-        return eName;
+System.out.print("\nEnter  the employee number to search: ");
+        int searchENo = sc.nextInt();
+        int flag = 0;
 
-    }
-    public double getSalary(){
-        return eSalary;
-
-    }
-}
-public class Employee_Manag(){
-    public static void main(String[] args){
-        Scanner s =new Scanner(System.in);
-        System.out.println("Enetr the number of Employees:");
-        int n=s.nextInt();
-        Employe [] employees =new Employe[n];
-        for(int i=0;i<n;i++){
-
-            System.out.println("Enter the details for employee"+(i+1));
-            System.out.print("eNo:");
-            int eNo=s.nextInt();
-            System.out.print("eSalary:");
-            String eName=s.nextDouble();
-            employees[i] =new Employe(eNo,eName,eSalary);
-
-        }
-        System.out.print("Enter the employee number to search for:")
-        int searchNo =s.nextInt();
-        boolean found=false;
-        for(Employe employe:employees){
-            if(employees.getEno()=searchNo){
-                System.out.println("Employee found:");
-                System.out.println("eNo:"+employee.getEno());
-                System.out.println("eName:"+employee.getName());
-                System.out.println("eSalary:"+employee.getSalary());
-                found=true;
+        for(Employee1 employee : e){
+            if (employee.eNo == searchENo) {
+                System.out.println("\nEmployee details found:");
+                employee.display();
+                flag = 1;
                 break;
-
             }
         }
-        if(!found){
-            System.out.println ("Employee not found!");
-
-        }
-        s.close();
-
-    }
-}
+        if(flag == 0)
+            System.out.println("Employee not found");
+    }  
+} 
