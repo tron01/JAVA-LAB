@@ -31,3 +31,23 @@ public static void main(String[] args){
 
 }
 }
+
+/*
+
+First complex number
+---------------------
+4+6i
+---------------------
+
+Second Complex number
+---------------------
+4+4i
+---------------------
+
+Addition of two complex number
+---------------------
+8+10i
+---------------------
+
+
+*/ 
