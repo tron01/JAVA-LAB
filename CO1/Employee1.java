@@ -56,3 +56,31 @@ System.out.print("\nEnter  the employee number to search: ");
             System.out.println("Employee not found");
     }  
 } 
+
+/*
+Enter the no. of employees
+2
+Enter the Employee No :: 11
+Enter the Employee name :: ASHIL
+Enter the salary :: 100
+Enter the Employee No :: 12
+Enter the Employee name :: ANAND
+Enter the salary :: 10000
+********************************
+**** Data Entered as below ****
+Employee No = 11
+Employee name = ASHIL
+Employee salary = 100.0
+Employee No = 12
+Employee name = ANAND
+Employee salary = 10000.0
+
+Enter  the employee number to search: 12
+
+Employee details found:
+Employee No = 12
+Employee name = ANAND
+Employee salary = 10000.0
+
+
+*/ 
