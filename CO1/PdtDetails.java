@@ -46,3 +46,30 @@ public class PdtDetails{
 	}
     }
 }	
+
+/**
+enter the 1st pdt details....
+...enter the details....
+enter pdt code, name, price....
+11
+cycle
+10000
+enter the 2nd pdt details....
+...enter the details....
+enter pdt code, name, price....
+20
+car
+100000   
+enter the 3rd pdt details....
+...enter the details....
+enter pdt code, name, price....
+19
+bike
+20000  
+Smallest price is: 10000
+..Product details..
+product code= 11
+product name= cycle
+product price= 10000
+
+ */
