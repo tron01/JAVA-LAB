@@ -70,7 +70,7 @@ public class bookDetails{
         }
         sc.close();
         sc1.close();
-
+        System.out.println("------------------------------------------------");
         System.out.println("\nInformations of all the Literature Books");
         for(int i=0;i<num;i++){
             j=i+1;
@@ -78,6 +78,7 @@ public class bookDetails{
             arr[i].display();
             
         }
+        System.out.println("------------------------------------------------");
         System.out.println("\nInformations of all the Fiction Books");
         for(int i=0;i<num1;i++){
             j1=i+1;
@@ -85,6 +86,8 @@ public class bookDetails{
             arr1[i].display();
             
         }
+        
+        System.out.println("------------------------------------------------");
      sc1.close();
      }
     
