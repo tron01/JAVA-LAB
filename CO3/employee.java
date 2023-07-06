@@ -74,3 +74,39 @@ class Teacher extends Employees{
         
     }
 }
+
+
+
+/*
+Enter the no. of employees
+2
+Enter the Employee Id : 12
+Enter the Employee name : john
+Enter the Address : kochi
+Enter the salary : 200000
+Enter the Department : mca
+Enter the subject : maths
+..........................................
+Enter the Employee Id : 13
+Enter the Employee name : joby
+Enter the Address : kochi
+Enter the salary : 30000
+Enter the Department : B tech
+Enter the subject : java
+..........................................
+EmpID   : 12
+Name    : john
+Address : kochi
+Salary  : 200000
+Dept Name : mca
+Subject Name : maths
+..........................................
+EmpID   : 13
+Name    : joby
+Address : kochi
+Salary  : 30000
+Dept Name : B tech
+Subject Name : java
+..........................................
+
+*/ 

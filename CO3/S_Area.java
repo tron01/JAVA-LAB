@@ -1,21 +1,31 @@
-import java.util.*;
-
-class S_Area {
-
-
-void  area(int l,int b){
-System.out.println("Area of Rectangle"+l*b);
+import java.util.Scanner;
+class Shape{
+static int area(int a){return a*a;}
+static int area(int a,int b){return a*b;}
+static double area(double c){return 3.14*c*c;}
 }
+class S_Area{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter length a:");
+int a= sc.nextInt(); 
+System.out.println("Enter breadth b:"); 
+int b=sc.nextInt();
+System.out.println("Enter radius:"); 
+double c=sc.nextDouble();
+System.out.println("Area of Square:"+Shape.area(a));
+System.out.println("Area of Rectangle:"+Shape.area(a,b));
+System.out.println("Area of Circle:"+Shape.area(c));
+}}
 
-void  area(int l){
-System.out.println("Area of square"+l*l);
-}
-
-public static void main(String args[]){
-    S_Area obj =new S_Area();
-    obj.area(12,20);
-    obj.area(5);
-}
-
-
-}
+/*
+Enter length a:
+10
+Enter breadth b:
+2
+Enter radius:
+4
+Area of Square:100
+Area of Rectangle:20
+Area of Circle:50.24
+*/
