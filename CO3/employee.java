@@ -1,3 +1,4 @@
+// c03 - prgm 2
 import java.util.Scanner;
 class employee{
 

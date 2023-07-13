@@ -1,3 +1,4 @@
+//c03 - prgm -1
 import java.util.Scanner;
 class Shape{
 static int area(int a){return a*a;}
