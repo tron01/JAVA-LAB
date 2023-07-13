@@ -1,3 +1,4 @@
+//c04 - prgm 2 part -1
 package arithamatic_package;
 
 interface interface_graphics{
