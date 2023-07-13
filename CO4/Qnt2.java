@@ -5,48 +5,65 @@ define 2 classes ; one for generating fibonacci numbers and other for
 
 import java.util.Scanner;
 
- class evenNo implements Runnable  {
-public void run() {
-    int c;
-     System.out.print("Enter the limit for even numbers:");
-           Scanner s = new Scanner(System.in);
-           c =s.nextInt();
+import java.util.*;
 
-	 for (int j=0;j<c;j++) {
-            if(j%2==0){
-            System.out.println(j);
-            }
-    		 
-  		}
-	}
-}
- class fib implements Runnable  {
-public void run() {
+class fibonacci implements Runnable {
+    int l;
 
-        int n1=0,n2=1,n3,i,count=10;    
-          System.out.print("Enter the limit:");
-           Scanner s = new Scanner(System.in);
-           count =s.nextInt();
-         System.out.print(n1+" "+n2);//printing 0 and 1    
-            
-                for(i=2;i<count;++i)//loop starts from 2 because 0 and 1 are already printed    
-                {    
-                n3=n1+n2;    
-                System.out.print(" "+n3);    
-                n1=n2;    
-                n2=n3;    
-                }    
-	}
-}
+    fibonacci(int n) {
+        l = n;
+    }
 
-
-
- public class Qnt2 {
-        public static void main(String[] args)
-        {
-                evenNo t1 =new evenNo();
-                fib t2 =new fib();
-                t1.start();
-                t2.start();
+    public void run() {
+        
+        int c;
+        int a = 0, b = 1;
+        System.out.print(a + " " + b);
+        for (int i = 0; i <= l; i++) {
+            c = a + b;
+            System.out.print(" " + c);
+            a = b;
+            b = c;
         }
+    }
 }
+
+class even implements Runnable {
+    int l;
+
+    even(int n) {
+        l = n;
+    }
+
+    public void run() {
+        for (int i = 0; i <= l; i++) {
+            if (i % 2 == 0)
+                System.out.print(i + "  ");
+        }
+        System.out.println("");
+
+    }
+
+}
+
+class Qnt2 {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Limit :");
+        int l = sc.nextInt();
+        fibonacci f = new fibonacci(l);
+        Thread T1 = new Thread(f);
+        T1.start();
+        even e = new even(l);
+        Thread T2 = new Thread(e);
+        T2.start();
+    }
+}
+
+/**
+Enter Limit :
+4
+0  2  4
+0 1 1 2 3 5 8
+
+ */
