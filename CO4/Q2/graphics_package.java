@@ -1,4 +1,4 @@
-//c04 - prgm 1 part -1
+//c04 - prgm 1 part -2
 
 import graphics.Circle;
 import graphics.Triangle;
