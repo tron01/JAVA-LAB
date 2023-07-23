@@ -93,3 +93,61 @@ public class bookDetails{
      }
     
     }
+
+    /**
+Enter the No. of Literature Books
+1
+
+ Enter the Literature Book Details
+
+
+1).
+
+ Book :
+abcd
+
+ Publisher:
+a1
+
+Enter the No. of Fiction Books
+2
+
+ Enter the Fiction Book Details
+
+
+1)
+
+ Book :
+xyz
+
+ Publisher:
+a2
+
+2)
+
+ Book :
+xyw
+
+ Publisher:
+a3
+------------------------------------------------
+
+Informations of all the Literature Books
+
+1).
+Publisher :abcd
+Book :a1
+------------------------------------------------
+
+Informations of all the Fiction Books
+
+1).
+Publisher :xyz
+Book :a2
+
+2).
+Publisher :xyw
+Book :a3
+
+
+ */
