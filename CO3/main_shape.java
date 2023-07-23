@@ -77,7 +77,7 @@ class main_shape{
                     break;
                 case 2:
                     float pr = c.perimeter();
-                    System.out.println(pr);
+                    System.out.println("perimeter : "+pr);
                     break;
                 case 3:
                     float a = r.area();
@@ -85,7 +85,7 @@ class main_shape{
                     break;
                 case 4:
                     float pr1 = r.perimeter();
-                    System.out.println(pr1);
+                    System.out.println("perimeter :"+pr1);
                     break;
                 case 5:
                     System.out.println("Exiting the Program");
@@ -99,3 +99,32 @@ class main_shape{
     }
 
 }
+/**
+1:Area of Circle
+2:Perimeter of Circle
+3:Area of Rectangle
+4:Perimter of Rectangle
+5:EXIT
+enter choice
+1
+Enter the radius : 3
+Area  :28.26
+1:Area of Circle
+2:Perimeter of Circle
+3:Area of Rectangle
+4:Perimter of Rectangle
+5:EXIT
+enter choice
+2
+Enter the radius : 44
+perimeter : 276.32
+1:Area of Circle
+2:Perimeter of Circle
+3:Area of Rectangle
+4:Perimter of Rectangle
+5:EXIT
+enter choice
+5
+Exiting the Program
+
+ */
