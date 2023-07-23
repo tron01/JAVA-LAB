@@ -49,12 +49,14 @@ class even implements Runnable {
 class Qnt2 {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Limit :");
+        System.out.println("Enter Limit  for fib:");
         int l = sc.nextInt();
+         System.out.println("Enter Limit  for even :");
+        int l2 = sc.nextInt();
         fibonacci f = new fibonacci(l);
         Thread T1 = new Thread(f);
         T1.start();
-        even e = new even(l);
+        even e = new even(l2);
         Thread T2 = new Thread(e);
         T2.start();
     }

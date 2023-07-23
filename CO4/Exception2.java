@@ -19,7 +19,7 @@ class Exception2 {
         for (i = 0; i < no; i++) {
             try {
                 temp = sc.nextInt();
-                if (temp > 0) {
+                if (temp >= 0) {
                     sum += temp;
                     count += 1;
                 } else {
@@ -34,3 +34,14 @@ class Exception2 {
 
     }
 }
+2/**
+Total numbers
+4
+1
+2
+-1
+Number is Negative
+EXCEPTION OCCURED -ve number entered
+5
+Average : 2
+ */
